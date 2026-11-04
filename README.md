@@ -1,35 +1,37 @@
-# Chonghua Li — personal portfolio
+# Chonghua Li — Portfolio
 
-A bilingual, static portfolio. English is the default; `?lang=zh` selects Chinese. A language change preserves the page and fragment. No database, tracking or paid APIs.
+Bilingual portfolio built with Next.js App Router, React and TypeScript. English is the default; `?lang=zh` selects Chinese. Production domain: https://chonghuali.com/.
 
-## Structure
-- `build.py`: editable bilingual content, experience and page shell; run with Python 3 to regenerate HTML/content.json.
-- `dist/app.js`: rendering, project filtering, language switching and the simulated inventory calculator.
-- `dist/style.css`: responsive layout and visual design.
-- `dist/`: deployable website; source CSS/JS are intentionally maintained here.
-- `.openai/hosting.json`: private preview Site identity.
+## Development
 
-## Run and verify
+Use Node.js 22 or newer (Next.js requires at least 20.9).
+
 ```sh
-python3 build.py
-node --check dist/app.js
-python3 -m http.server 8000 --directory dist
+npm ci
+npm run dev
+npm run build
 ```
-Open http://localhost:8000/. No dependency installation or JavaScript bundler is needed.
 
-## Update content
-Edit profile, projects, experience and contact in `build.py`, then regenerate. Each project needs matching English and Chinese text and a unique slug. Add project data to the projects array; its detail page is generated automatically. Categories: coding, data, solution. Add only approved source/Demo links. The Coding category intentionally has no invented projects.
-
-A public CV download and LinkedIn link are omitted pending confirmation. Do not add the supplied original CV directly: it contains telephone numbers and outdated employment wording. Photos can be added to dist/assets with meaningful alt text, then referenced by the components.
+The build exports static HTML into `out/` and copies it into `dist/`. No Node.js server is needed for this portfolio.
 
 ## Cloudflare Pages
-Upload `dist` using Direct Upload, or connect a chosen GitHub repository with build command `python3 build.py` and output directory `dist`. Run the syntax check before deployment. No server functions are required. The root `404.html` handles missing routes. Configure your chosen domain through the hosting dashboard. Add canonical URLs and a sitemap only after the public domain is confirmed.
 
-## Hosting and source
-Public source repository: https://github.com/Ch-L-Glo/chonghua_portfolio
-Target domain: chonghuali.com
-Cloudflare Pages settings: production branch `main`, build command `python3 build.py`, output directory `dist`, root directory blank. Connect the repository, deploy, then add `chonghuali.com` under Custom domains. Let Cloudflare create the DNS record through that flow.
-The existing ChatGPT Site is a separate preview and is not automatically updated by GitHub pushes.
+Existing settings remain compatible: build command `python3 build.py`, output directory `dist`. The Python entry point only runs `npm ci` and the Next.js build; it no longer generates pages.
 
-## Content provenance and review
-The uploaded CV provided KPMG, Roland Berger, Mitsubishi and education details. The CV still described KPMG as current; the 2026 transition to Emerge follows newer information in the conversation. Exact current job title and education wording should be confirmed before public launch. No quantitative performance claims are published. The diagrams and calculator are new illustrative work, not client screenshots.
+Recommended settings when updating the dashboard: build command `npm run build`, output directory `dist`, production branch `main`, Node.js 22. `out` can also be used as the output directory. Keep the custom domain attached to the existing Pages project.
+
+Commits to main trigger publication only when Cloudflare's Git integration and automatic production deployments are enabled. ChatGPT previews are separate. Check Cloudflare Deployments for build results.
+
+## Content and visuals
+
+- `components/Portfolio.tsx`: layout and bilingual interface copy.
+- `data/content.json`: bilingual project summaries and career history.
+- `app/globals.css`: typography, spacing, breakpoints and reduced-motion-aware animations.
+- `public/profile.jpeg`: original photo displayed with a circular CSS crop; the person is not AI edited.
+- `app/work/[slug]/page.tsx`: statically generated project routes, preserving original URLs.
+
+Project images are intentional placeholders. Add reviewed screenshots to `public/work/` and replace the placeholder rendering when content is ready. Do not invent results or metrics. Existing case summaries are retained for future refinement.
+
+## Validation
+
+Production build and TypeScript validation; browser checks for language switching, project navigation, filtering and inventory calculation. Dependencies are locked in package-lock.json.
