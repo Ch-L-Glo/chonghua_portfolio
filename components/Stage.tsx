@@ -1,11 +1,11 @@
 import { stops } from '../data/stages';
 
 const notes: Record<string, [string,string]> = {
-  ecust: ['My undergraduate training was in mechanical automation. I later took that engineering background into manufacturing consulting at Mitsubishi Electric.', '本科专业为机械自动化。毕业后，我在三菱电机自动化从事制造业业务咨询，将工程背景带入工厂规划与生产流程分析。'],
-  mitsubishi: ['I worked on digital factory planning and process improvement, connecting production requirements with automation solutions.', '参与数字工厂规划与流程改善，从生产现场的业务需求出发，梳理可通过自动化改进的环节。'],
-  nus: ['My coursework covered business statistics, customer analytics and predictive modelling. I also reached the semi-finals of the KPMG business case competition.', '课程涵盖商业统计、客户分析与预测建模。在读期间，我也参加了毕马威商业案例竞赛，进入半决赛。'],
-  kpmg: ['I worked with infrastructure teams to define performance indicators, develop management dashboards and translate risk-review processes into digital workflows.', '在基础设施咨询项目中，与业务团队一起定义绩效指标、开发管理看板，并把风险审核流程转化为数字化工作流。'],
-  emerge: ['My work focuses on planning a shared data platform across regions, aligning metric definitions and translating supply-chain questions into data requirements.', '当前工作聚焦跨区域数据平台规划，包括协调各地指标口径，把供应链可视化需求拆解为数据和系统要求。'],
+  ecust: ['Studying mechanical automation gave me a starting point for understanding equipment and production processes. My first consulting work took those questions onto the factory floor.', '学习机械自动化让我从设备和生产流程入手理解工厂。毕业后，我在三菱电机的咨询工作中继续研究这些现场问题。'],
+  mitsubishi: ['In digital factory planning, I worked from production requirements to the process changes an automation proposal would require.', '在数字工厂规划中，我从生产需求出发，梳理自动化方案需要配合哪些现场流程调整。'],
+  nus: ['I studied how to use business statistics, customer analytics and predictive models to evaluate business questions. I also reached the semi-finals of the KPMG business case competition.', '学习重点是如何运用商业统计、客户分析和预测模型回答经营问题。在读期间，我也参加了毕马威商业案例竞赛，进入半决赛。'],
+  kpmg: ['Two recurring questions shaped my work: how management should interpret project performance and who should act on a reported risk. I helped teams define KPIs, build dashboards and design the review workflow.', '项目里反复出现两个问题：管理层如何判断项目表现，风险上报后又由谁处理。我参与定义指标、开发管理看板，并设计审核流程。'],
+  emerge: ['I help define what a regional inventory report should measure, which system supplies each figure and who resolves discrepancies. These decisions form the scope of the shared data platform.', '我参与确认跨区域库存报告应衡量什么、每项数字由哪个系统提供，以及差异由谁处理。这些决定构成共享数据平台的建设范围。'],
 };
 export default function Stage({id,zh}:{id:string;zh:boolean}) {
   const stage = stops.find(([key]) => key === id);

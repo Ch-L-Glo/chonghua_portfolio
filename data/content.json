@@ -6,61 +6,44 @@
         "About",
         "Contact"
       ],
-      "eyebrow": "CHONGHUA LI · SINGAPORE",
-      "headline": "Making technology<br><em>work for business.</em>",
-      "intro": "I connect business problems with data, digital solutions and hands-on delivery. From consulting to enterprise transformation, I turn complex requirements into something teams can use.",
       "explore": "Explore my work",
       "about": "More about me",
-      "selected": "Selected work",
-      "selectedsub": "A look at the systems, analysis and solutions behind my work.",
       "all": "All work",
       "coding": "Coding",
       "data": "Data & analytics",
       "solution": "Solutions",
-      "case": "Case study",
-      "view": "Explore project",
-      "approach": "How I work",
-      "approachTitle": "From the right question<br>to a working solution.",
       "steps": [
         [
-          "01",
-          "Understand the business",
-          "Start with the decision, the process and the people. Make the problem clear before choosing the technology."
+          "1",
+          "Define the decision",
+          "Who will act on this number, and what choices do they have? That sets the scope."
         ],
         [
-          "02",
-          "Make it tangible",
-          "Translate requirements into models, architecture and prototypes that people can discuss and test."
+          "2",
+          "Agree on a definition",
+          "Before building a view, agree on its source, reporting period and owner."
         ],
         [
-          "03",
-          "Build for adoption",
-          "Bring stakeholders, delivery and governance together so the solution can become part of everyday work."
+          "3",
+          "Test the handoff",
+          "Use a real exception to walk through who reviews it, who responds and where the decision is recorded."
         ]
       ],
-      "aboutTitle": "Business perspective.<br><em>Engineering mindset.</em>",
-      "bio": "My work sits between technology and business. I have worked across manufacturing, infrastructure consulting and enterprise data initiatives, combining analytical thinking with practical project delivery.",
-      "experience": "Experience",
-      "education": "Education",
-      "contactTitle": "Let’s talk about<br><em>what comes next.</em>",
-      "contactText": "For conversations about data, digital transformation and building useful things.",
-      "email": "Send me an email",
+      "bio": "Manufacturing taught me to start with the operating process. At KPMG Singapore I applied that discipline to project reporting and risk reviews. Today I use it to plan how regional supply-chain data fits together.",
+      "contactText": "For discussions about enterprise data, management reporting or supply-chain planning, reach me directly.",
       "footer": "Data · Digital transformation · Delivery",
       "back": "All work",
-      "context": "The context",
-      "role": "My contribution",
-      "method": "Approach",
-      "outcome": "Delivery & status",
+      "context": "The question",
+      "role": "My part",
+      "method": "How we approached it",
+      "outcome": "What came out of it",
       "note": "About this case",
-      "illustration": "CONCEPT ILLUSTRATION · NO LIVE BUSINESS DATA",
       "demo": "Try the interactive example",
       "demoNote": "Illustrative portfolio demo with simulated inputs. Not a production business system.",
       "demand": "Monthly demand",
       "inventory": "Inventory on hand",
       "months": "Months of cover",
-      "demoDesc": "Change demand or inventory to see how stock coverage changes. This simple example illustrates a planning metric; it is not a validated inventory policy.",
-      "noWork": "No published coding projects yet. Personal applications and source links will appear here when added.",
-      "skills": "Areas of practice"
+      "demoDesc": "Divide stock on hand by monthly demand. For example, 3,000 units in stock at 1,500 units per month gives two months of cover."
     },
     "zh": {
       "nav": [
@@ -68,61 +51,44 @@
         "关于我",
         "联系"
       ],
-      "eyebrow": "李崇华 · 新加坡",
-      "headline": "让技术，<br><em>真正服务于业务。</em>",
-      "intro": "连接业务问题、数据与数字化方案。从咨询到企业转型，我将复杂需求转化为团队能够理解、验证和使用的解决方案。",
       "explore": "浏览作品集",
       "about": "了解我的经历",
-      "selected": "精选作品",
-      "selectedsub": "从数据分析到系统方案，展示我如何拆解问题并推进交付。",
       "all": "全部作品",
       "coding": "编程作品",
       "data": "数据与分析",
       "solution": "解决方案",
-      "case": "项目案例",
-      "view": "查看项目",
-      "approach": "工作方法",
-      "approachTitle": "从明确问题，<br>到实现解决方案。",
       "steps": [
         [
-          "01",
-          "理解业务",
-          "从决策、流程与使用者出发，在选择技术前先明确问题。"
+          "1",
+          "明确决策",
+          "谁会根据这个数字采取行动？有哪些可选方案？这两个问题决定项目范围。"
         ],
         [
-          "02",
-          "让方案可见",
-          "将需求转化为模型、架构和原型，让团队能够讨论与验证。"
+          "2",
+          "对齐口径",
+          "在开发看板之前，先确认数据来源、报告周期与指标负责人。"
         ],
         [
-          "03",
-          "推动实际应用",
-          "连接业务参与者、项目交付与治理，让方案融入日常工作。"
+          "3",
+          "验证交接",
+          "挑一个真实异常，逐步核对谁审核、谁处理，以及决定记录在哪里。"
         ]
       ],
-      "aboutTitle": "以业务为出发点，<br><em>用工程思维解决问题。</em>",
-      "bio": "我的工作位于技术与业务的交汇处。经历涵盖制造业、基础设施咨询与企业数据建设，注重分析思考，也关注项目的实际推进与交付。",
-      "experience": "职业经历",
-      "education": "教育背景",
-      "contactTitle": "一起聊聊，<br><em>接下来的可能。</em>",
-      "contactText": "欢迎交流数据、数字化转型，以及如何把想法做成有用的产品。",
-      "email": "发邮件联系",
+      "bio": "制造业经历让我习惯先看现场流程。在毕马威新加坡，我把这套方法用于项目报告和风险审核。现在，我用它梳理各区域的供应链数据该如何汇总。",
+      "contactText": "欢迎就企业数据平台、管理报告或供应链规划与我交流。",
       "footer": "数据 · 数字化转型 · 项目交付",
       "back": "全部作品",
-      "context": "项目背景",
-      "role": "我的贡献",
-      "method": "实施思路",
-      "outcome": "交付与阶段",
+      "context": "要解决什么问题",
+      "role": "我负责什么",
+      "method": "具体怎么做",
+      "outcome": "做到哪一步",
       "note": "案例说明",
-      "illustration": "概念示意 · 不含真实业务数据",
       "demo": "体验交互示例",
       "demoNote": "作品集交互示例，使用模拟输入，并非生产业务系统。",
       "demand": "每月需求量",
       "inventory": "现有库存量",
       "months": "库存覆盖月数",
-      "demoDesc": "调整需求量或库存量，观察库存覆盖月数的变化。此示例用于解释规划指标，不代表经过验证的库存策略。",
-      "noWork": "暂未发布个人编程项目。添加后将在这里展示应用与代码链接。",
-      "skills": "专业方向"
+      "demoDesc": "库存除以每月需求，就是按当前需求速度还能用几个月。例如，库存 3,000 件，每月需要 1,500 件，就能用 2 个月。"
     }
   },
   "projects": [
@@ -131,33 +97,33 @@
       "category": "solution",
       "art": "hub",
       "en": {
-        "title": "Connecting a global data landscape",
-        "subtitle": "Global Data Hub & Control Tower",
+        "title": "Regional supply-chain visibility",
+        "subtitle": "Regional supply-chain visibility",
         "tags": [
           "Data strategy",
           "Architecture",
           "Governance"
         ],
-        "desc": "A shared data foundation for cross-regional visibility and supply-chain decisions.",
-        "context": "Regional teams use different systems and data definitions. A global view requires alignment on data ownership, meaning and operating processes.",
-        "role": "Supporting the definition of the data platform scope, translating business needs into data and system requirements, and coordinating solution discussions.",
-        "method": "Define data contracts and shared metrics; separate technical and business data quality; plan master-data mapping, exception handling and access governance.",
-        "outcome": "Planning and solution development. This case describes the approach, without claiming a completed rollout or quantified business benefits.",
+        "desc": "Which inventory and demand figures can regional teams compare?",
+        "context": "Teams report from different systems. A common inventory view depends on agreement about products, units and the date each number represents.",
+        "role": "I help translate planning questions into data requirements and identify who owns each definition.",
+        "method": "Start with shared definitions, map local records to them and route discrepancies to someone who can resolve them.",
+        "outcome": "The platform is in planning and solution design. The next test is whether regional data reconciles against the agreed definitions.",
         "note": "A high-level, anonymised summary. The visual is conceptual and does not reproduce internal architecture."
       },
       "zh": {
-        "title": "连接跨区域的数据体系",
-        "subtitle": "全球数据平台与 Control Tower",
+        "title": "跨区域供应链可视化",
+        "subtitle": "跨区域供应链可视化",
         "tags": [
           "数据战略",
           "架构规划",
           "数据治理"
         ],
-        "desc": "建立共同的数据基础，支持跨区域可视化与供应链决策。",
-        "context": "各区域团队使用不同系统与数据定义。形成全球视角，需要先对齐数据归属、指标含义与运营流程。",
-        "role": "协助定义平台范围，将业务需求拆解为数据与系统要求，并协调方案讨论。",
-        "method": "定义数据契约与共同指标；区分技术和业务数据质量；规划主数据映射、例外处理与权限治理。",
-        "outcome": "处于规划与方案推进阶段。本案例介绍方法，不宣称已全面上线或实现量化收益。",
+        "desc": "各区域的库存与需求，哪些数字可以直接比较？",
+        "context": "各区域使用不同系统。要汇总库存，先要对齐产品、计量单位和数据对应的日期。",
+        "role": "我把供应链规划问题拆成数据需求，并与团队确认每项定义由谁负责。",
+        "method": "先定义共同口径，再映射本地记录，把差异交给有权限处理的人。",
+        "outcome": "目前处于平台规划与方案设计阶段。下一步要用区域数据核对这些口径能否实际对账。",
         "note": "经概括的匿名案例。配图为概念示意，不复现内部架构。"
       }
     },
@@ -166,33 +132,33 @@
       "category": "data",
       "art": "chart",
       "en": {
-        "title": "Making performance easier to see",
-        "subtitle": "Management dashboards & analytics",
+        "title": "Management reporting",
+        "subtitle": "Management reporting",
         "tags": [
           "Power BI",
           "KPI design",
           "Data visualisation"
         ],
-        "desc": "Turning business questions into consistent metrics and useful management views.",
-        "context": "Management reporting needs to connect operational information with the decisions stakeholders make. A dashboard is useful only when its metrics are understood.",
-        "role": "Working with stakeholders on corporate and project KPI frameworks, business analysis and dashboard delivery in infrastructure-related engagements.",
-        "method": "Clarify the decision and metric definitions, map source data, build analytical views, and review usability with stakeholders.",
-        "outcome": "Experience in KPI framework development and analytical delivery. No client data or unverified impact figures are included.",
+        "desc": "What does a change in a reported KPI actually tell management?",
+        "context": "A portfolio report draws on project-level records. The same indicator can carry a different meaning across teams.",
+        "role": "I worked with infrastructure advisory teams on corporate and project indicators and management dashboards.",
+        "method": "Trace a metric from its source to its calculation and reporting period. Review the resulting view with the people who use it.",
+        "outcome": "The work produced KPI frameworks and dashboard views for management review. The calculator below illustrates one planning measure.",
         "note": "The charts and calculator are newly created illustrative examples, not screenshots of a client deliverable."
       },
       "zh": {
-        "title": "让经营表现更清晰",
-        "subtitle": "管理层看板与业务分析",
+        "title": "经营指标与管理报告",
+        "subtitle": "经营指标与管理报告",
         "tags": [
           "Power BI",
           "指标设计",
           "数据可视化"
         ],
-        "desc": "将业务问题转化为统一指标与可用于管理决策的分析视图。",
-        "context": "管理报告需要将运营信息与实际决策连接起来。只有指标被共同理解，看板才有使用价值。",
-        "role": "在基础设施相关咨询项目中，与业务参与者共同梳理企业和项目 KPI 框架，参与业务分析与看板交付。",
-        "method": "明确决策需求与指标口径，映射数据来源，构建分析视图，并与使用者验证可用性。",
-        "outcome": "相关经验涵盖 KPI 框架设计与分析交付。此处不展示客户数据或未经确认的收益数字。",
+        "desc": "同一个 KPI 发生变化，管理层该如何解读？",
+        "context": "管理报告汇集多个项目的数据。名称相同的指标，各团队可能使用不同算法。",
+        "role": "我在基础设施咨询项目中参与企业及项目指标设计，并开发管理看板。",
+        "method": "从数据来源、计算逻辑一路追到报告周期，再与使用者一起核对看板。",
+        "outcome": "交付内容包括 KPI 框架和供管理层审阅的看板。下方计算器演示一个库存规划指标。",
         "note": "图表和计算器为新制作的说明性示例，不是客户交付物截图。"
       }
     },
@@ -201,33 +167,33 @@
       "category": "solution",
       "art": "flow",
       "en": {
-        "title": "From process to practical workflow",
-        "subtitle": "Digital risk management",
+        "title": "Risk review and follow-up",
+        "subtitle": "Risk review and follow-up",
         "tags": [
           "Process design",
           "Workflow",
           "Delivery"
         ],
-        "desc": "Translating risk-management processes into a more structured digital experience.",
-        "context": "Risk-management activities involve information gathering, ownership, review and follow-up. Making these steps explicit creates a basis for workflow design.",
-        "role": "Helping define risk-management processes and digitise them through workflow solutions in consulting engagements.",
-        "method": "Map the process, clarify responsibilities, define review stages and develop the workflow around business requirements.",
-        "outcome": "Process definition and workflow digitisation experience. Performance improvements are omitted pending confirmation for public use.",
+        "desc": "When a risk is raised, who owns the next action?",
+        "context": "Risk reviews cross team boundaries. An open item needs a named owner, a review stage and a way to track the response.",
+        "role": "I helped consulting teams document risk processes and turn review requirements into workflow specifications.",
+        "method": "Map the handoffs from submission to review and follow-up, including the information each person needs to act.",
+        "outcome": "The deliverables covered process definitions and digital workflows for review and follow-up.",
         "note": "An anonymised professional summary. The flow is an explanatory illustration rather than an internal process specification."
       },
       "zh": {
-        "title": "从业务流程到可用工作流",
-        "subtitle": "风险管理数字化",
+        "title": "风险审核与跟进",
+        "subtitle": "风险审核与跟进",
         "tags": [
           "流程设计",
           "工作流",
           "项目交付"
         ],
-        "desc": "将风险管理流程转化为结构清晰的数字化操作体验。",
-        "context": "风险管理涉及信息收集、责任分工、审核与后续跟进。明确这些环节，是设计工作流的基础。",
-        "role": "在咨询项目中参与风险管理流程定义，并通过工作流方案推动数字化。",
-        "method": "梳理流程，明确责任，定义审核阶段，并根据业务要求构建工作流。",
-        "outcome": "相关经验涵盖流程定义与工作流数字化。量化改善数据待确认可公开后再加入。",
+        "desc": "风险上报之后，谁来跟进？",
+        "context": "风险审核跨越多个团队。每项待处理事项都需要明确负责人、审核节点和后续记录。",
+        "role": "我协助咨询团队梳理风险流程，将审核要求转化为工作流设计。",
+        "method": "逐步梳理提交、审核和跟进之间的交接，明确每位处理人需要哪些信息。",
+        "outcome": "交付内容涵盖流程定义，以及支持审核与后续跟进的数字工作流。",
         "note": "匿名职业案例。流程图仅用于解释概念，不是内部流程规范。"
       }
     }
