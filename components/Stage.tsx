@@ -19,12 +19,24 @@ export default function Stage({id,zh}:{id:string;zh:boolean}) {
   return <article className="wrap section journey stage">
     <a className="text-link" href={'/about/'+query+'#'+id}>← {zh?'返回个人履历':'Back to résumé'}</a>
     <StageNav id={id} zh={zh} />
-    <header className="stage-head"><div className="logo-plate"><img src={'/assets/organizations/'+id+'.webp'} alt=""/></div><div><small>{years}</small><h1>{zh?cn:en}</h1></div></header>
-    <p className="large-copy">{id==='nus' ? (zh?'商业分析技术硕士':'Master of Technology in Business Analytics') : (zh?summaryZh:summary)}</p>
-    <p>{notes[id][zh?1:0]}</p>
+    <header className="stage-head">
+      <div className="logo-plate">
+        <img src={'/assets/organizations/'+id+'.webp'} alt="" />
+      </div>
+      <div>
+        <small>{years}</small>
+        <h1>{zh ? cn : en}</h1>
+        <p className="stage-summary">
+          {id === 'nus' ? (zh ? '商业分析技术硕士' : 'Master of Technology in Business Analytics') : (zh ? summaryZh : summary)}
+        </p>
+      </div>
+    </header>
+    <div className="stage-content">
+      <p className="stage-description">{notes[id][zh ? 1 : 0]}</p>
     {id==='nus' && <section className="internship"><div><p className="eyebrow">{zh?'在读期间实习':'Internship during graduate study'}</p><img src="/assets/organizations/roland-berger.webp" alt="Roland Berger"/></div><div><small>{zh?'2021 年 12 月 – 2022 年 1 月':'December 2021 – January 2022'}</small><h2>{zh?'罗兰贝格 · 商业分析实习生':'Roland Berger · Business Analyst Intern'}</h2><p>{zh?'参与汽车行业研究与竞争对标分析，为咨询团队整理市场和竞争对手资料。':'Supported automotive industry research and competitive benchmarking for the consulting team.'}</p></div></section>}
     {id==='emerge' && <a className="text-link" href={'/work/global-data-hub/'+query}>{zh?'查看全球数据平台案例':'Explore the global data platform case'} ↗</a>}
     {id==='kpmg' && <a className="text-link" href={'/work/management-analytics/'+query}>{zh?'查看管理分析案例':'Explore the management analytics case'} ↗</a>}
+    </div>
     <nav className="stage-pagination" aria-label={zh ? '相邻经历' : 'Adjacent experience'}>
       <div>{newer && <a href={'/about/'+newer[0]+'/'+query}><small>← {zh ? '较近经历' : 'More recent'}</small><span>{newer[zh ? 3 : 2]}</span></a>}</div>
       <div>{earlier && <a href={'/about/'+earlier[0]+'/'+query}><small>{zh ? '更早经历' : 'Earlier experience'} →</small><span>{earlier[zh ? 3 : 2]}</span></a>}</div>

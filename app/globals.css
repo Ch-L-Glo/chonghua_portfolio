@@ -216,7 +216,7 @@ footer {border-top:1px solid var(--rule);background:var(--tint);padding-top:52px
 .stage-tabs a:hover {background: var(--tint)}
 .stage-scroll {flex-shrink: 0; width: 40px; height: 44px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); color: var(--accent)}
 .stage-scroll:hover {background: var(--tint)}
-.stage .stage-head {border-top: 0; margin-top: 20px}
+
 .stage-pagination {display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid var(--rule);margin-top:64px;padding-top:24px}
 .stage-pagination a {display:flex;flex-direction:column;gap:8px}
 .stage-pagination div:last-child {text-align:right}
@@ -225,4 +225,55 @@ footer {border-top:1px solid var(--rule);background:var(--tint);padding-top:52px
   .stage-scroll {width:32px}
   .stage-tabs a {padding:14px}
   .stage-pagination {gap:20px;font-size:15px}
+}
+
+/* Experience details use a compact identity header and a readable content column. */
+.stage.section {padding-block: 40px 64px}
+.stage .stage-navigation {margin-top: 20px}
+.stage .stage-tabs a {padding-block: 12px; font-size: 15px}
+.stage .stage-head {
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin: 36px 0 0;
+  padding: 0 0 28px;
+  border-top: 0;
+  border-bottom: 1px solid var(--rule);
+}
+.stage-head .logo-plate {min-height: 84px; padding-top: 8px}
+.stage-head .logo-plate img {max-width: 100px; max-height: 72px}
+.stage .stage-head h1 {
+  max-width: 28ch;
+  margin: 8px 0 14px;
+  font: 500 clamp(28px, 3.2vw, 42px)/1.18 var(--display);
+  letter-spacing: -.025em;
+  overflow-wrap: break-word;
+}
+.stage-summary {font-size: 19px; line-height: 1.6; max-width: 65ch}
+.stage-content {margin-left: 144px; padding-top: 26px; max-width: 760px}
+.stage-description {font-size: 17px; line-height: 1.8; max-width: 68ch}
+.stage-content > .text-link {margin-top: 20px}
+.stage-content .internship {
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 32px;
+  padding: 24px;
+  background: var(--tint);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+.stage-content .internship h2 {font-size: 25px; line-height: 1.35}
+.stage-content .internship img {max-width: 100px; max-height: 64px; object-fit: contain}
+.stage .stage-pagination {margin-top: 40px; padding-top: 20px; font-size: 16px}
+.stage-pagination a {padding: 8px 0}
+@media(max-width:760px) {
+  .stage.section {padding-block: 24px 44px}
+  .stage .stage-head {grid-template-columns: 64px minmax(0, 1fr); gap: 18px; margin-top: 26px; padding-bottom: 22px}
+  .stage-head .logo-plate {min-height: 60px; padding-top: 6px}
+  .stage-head .logo-plate img {max-width: 64px; max-height: 54px}
+  .stage .stage-head h1 {font-size: 28px; margin-bottom: 12px}
+  .stage-summary {font-size: 17px}
+  .stage-content {margin-left: 0; padding-top: 22px}
+  .stage-content .internship {grid-template-columns: 1fr; padding: 20px; gap: 16px}
+  .stage .stage-pagination {font-size: 15px}
 }
