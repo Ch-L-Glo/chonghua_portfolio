@@ -5,5 +5,5 @@ const paths: Record<string, React.ReactNode> = {
   network: <><circle cx="12" cy="12" r="3"/><path d="m10 10-5-5m9 5 5-5m-9 9-5 5m9-5 5 5"/><circle cx="4" cy="4" r="2"/><circle cx="20" cy="4" r="2"/><circle cx="4" cy="20" r="2"/><circle cx="20" cy="20" r="2"/></>
 };
 export default function Mark({name}:{name:string}) {
-  return paths[name] ? <svg className="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">{paths[name]}</svg> : <img className="mark" src={'/marks/'+name+'.svg'} alt=""/>;
+  return paths[name] ? <svg className="mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">{paths[name]}</svg> : <img className="mark" src={'/assets/tools/'+name+'.svg'} alt=""/>;
 }

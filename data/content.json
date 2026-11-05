@@ -232,56 +232,6 @@
       }
     }
   ],
-  "experience": [
-    [
-      "Emerge Bioscience / Kingfriend",
-      "2026 —",
-      {
-        "en": "Global data initiatives",
-        "zh": "全球数据项目"
-      },
-      {
-        "en": "Data platform planning, supply-chain visibility and cross-regional collaboration.",
-        "zh": "数据平台规划、供应链可视化与跨区域协作。"
-      }
-    ],
-    [
-      "KPMG Singapore",
-      "2022 — 2026",
-      {
-        "en": "Senior Associate · Infrastructure Advisory",
-        "zh": "高级顾问 · 基础设施咨询"
-      },
-      {
-        "en": "Digital strategy, analytics, prototypes and technology project delivery.",
-        "zh": "数字化战略、数据分析、原型开发与技术项目交付。"
-      }
-    ],
-    [
-      "Roland Berger",
-      "2021 — 2022",
-      {
-        "en": "Business Analyst Intern",
-        "zh": "商业分析实习生"
-      },
-      {
-        "en": "Industry research and competitive benchmarking in the automotive sector.",
-        "zh": "汽车行业研究与竞争对标分析。"
-      }
-    ],
-    [
-      "Mitsubishi Electric Automation",
-      "2017 — 2021",
-      {
-        "en": "Business Consultant",
-        "zh": "业务顾问"
-      },
-      {
-        "en": "Manufacturing operations, digital factory planning and process improvement.",
-        "zh": "制造运营、数字工厂规划与流程优化。"
-      }
-    ]
-  ],
   "contact": {
     "email": "mihawk_lee@hotmail.com"
   }
