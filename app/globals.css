@@ -44,7 +44,7 @@ button,input {font:inherit}button {cursor:pointer}img {display:block;max-width:1
 .journey h1,.case-intro h1 {max-width:19ch;margin-bottom:20px}.section-links {margin-block:22px}.journey ol {list-style:none;padding:0;margin-block:32px}
 .journey li,.stage-head,.internship,.play-card,.case-section {border-top:1px solid var(--rule);padding-block:30px;display:grid;align-items:center;gap:clamp(24px,4vw,60px)}
 .journey li,.stage-head,.internship {grid-template-columns:clamp(100px,15vw,166px) 1fr}
-.logo-plate {display:flex;align-items:center;justify-content:flex-start}
+.logo-plate {display:flex;align-items:center;justify-content:center}
 .logo-plate img,.internship img {width:auto;height:auto;max-width:100%;max-height:78px;object-fit:contain;mix-blend-mode:multiply}
 .logo-plate img[src*="emerge"],.logo-plate img[src*="ecust"] {max-height:88px}
 .journey li h2,.play-card h2,.internship h2 {font-size:clamp(24px,3vw,38px);margin:5px 0 10px}.journey li h2 span {font:19px var(--body);color:var(--accent)}
@@ -62,3 +62,49 @@ footer {border-top:1px solid var(--rule);background:var(--tint);padding-top:52px
 .internship,.calc-grid{grid-template-columns:1fr}.internship img{max-width:130px}.stage-head h1{font-size:clamp(28px,7vw,44px)}.section-links{gap:16px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Preserve each credential badge's proportions within a consistent image area. */
+.credential-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+.credential-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 28px 20px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: border-color .2s, transform .2s;
+}
+.credential-card:hover {border-color: var(--accent); transform: translateY(-3px)}
+.credential-badge {
+  height: 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.credential-badge img {max-width: 100%; max-height: 160px; width: auto; height: auto; object-fit: contain}
+.credential-card .credential-issuer {font-size: 16px; margin: 0 0 8px}
+.credential-card h3 {font-family: var(--body); font-size: 22px; line-height: 1.4; margin: 0 0 24px}
+.credential-verify {margin-top: auto; color: var(--accent); font-weight: 600}
+@media (max-width: 760px) {
+  .credential-grid {grid-template-columns: 1fr}
+  .credential-card {padding: 24px}
+  .credential-badge {height: 140px}
+  .credential-badge img {max-height: 140px}
+}
+@media (prefers-reduced-motion: reduce) {
+  .credential-card {transition: none}
+  .credential-card:hover {transform: none}
+}
+
+.skills-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+.skill-group h3 {font:600 20px/1.4 var(--body);margin-bottom:14px}
+.skill-group .skill-tags {margin:0}
+@media(max-width:760px) {.skills-grid{grid-template-columns:1fr}}
