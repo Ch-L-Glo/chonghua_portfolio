@@ -63,48 +63,166 @@ footer {border-top:1px solid var(--rule);background:var(--tint);padding-top:52px
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-/* Preserve each credential badge's proportions within a consistent image area. */
+
+/* Résumé sections use a shared divider and a consistent heading rhythm. */
+.journey > .resume-section {
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid #a9bdb7;
+  scroll-margin-top: 24px;
+}
+.journey > .resume-section > h2 {
+  font-size: clamp(32px, 3.2vw, 42px);
+  margin-bottom: 30px;
+}
+.journey > h1 {font-size: clamp(40px, 5.2vw, 68px); max-width: 24ch}
+.resume-nav {
+  display: inline-flex;
+  gap: 0;
+  padding: 6px;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: var(--tint);
+}
+.resume-nav a {padding: 6px 20px; text-decoration: none}
+.resume-nav a + a {border-left: 1px solid #bacdc5}
+.resume-nav a:hover {background: #dce9e2}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.skill-group {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  align-content: start;
+  gap: 18px;
+  padding: 28px;
+  background: #edf3f0;
+  border: 1px solid #d2dfd8;
+  border-radius: 10px;
+}
+.skill-category-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  color: #bce6d6;
+  background: var(--deep);
+  border-radius: 10px;
+}
+.skill-group h3 {
+  align-self: center;
+  font: 600 20px/1.4 var(--body);
+  text-wrap: pretty;
+}
+.skill-group .skill-tags {
+  grid-column: 1 / -1;
+  gap: 8px;
+  margin: 4px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #c8d9d0;
+}
+.skill-group .skill-tags span {
+  padding: 5px 10px;
+  background: var(--paper);
+  border: 1px solid #d4e0d9;
+  border-radius: 5px;
+  font-size: 15px;
+}
 .credential-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  gap: 22px;
 }
 .credential-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 28px 20px;
+  overflow: hidden;
   border: 1px solid var(--rule);
-  border-radius: 12px;
-  text-decoration: none;
-  transition: border-color .2s, transform .2s;
+  border-radius: 10px;
+  background: white;
+  transition: border-color .2s, box-shadow .2s;
 }
-.credential-card:hover {border-color: var(--accent); transform: translateY(-3px)}
+.credential-card:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px #102f3b0c;
+}
 .credential-badge {
-  height: 160px;
-  width: 100%;
+  height: 208px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  background: #f0f4f2;
+  border-bottom: 1px solid var(--rule);
 }
-.credential-badge img {max-width: 100%; max-height: 160px; width: auto; height: auto; object-fit: contain}
-.credential-card .credential-issuer {font-size: 16px; margin: 0 0 8px}
-.credential-card h3 {font-family: var(--body); font-size: 22px; line-height: 1.4; margin: 0 0 24px}
-.credential-verify {margin-top: auto; color: var(--accent); font-weight: 600}
+.credential-badge img {max-width: 80%; max-height: 152px; width: auto; height: auto; object-fit: contain}
+.credential-body {display: flex; flex: 1; flex-direction: column; padding: 24px}
+.credential-card .credential-issuer {font-size: 14px; margin-bottom: 10px; color: var(--accent); font-weight: 600}
+.credential-card h3 {font: 600 21px/1.4 var(--body); margin-bottom: 28px; text-wrap: pretty}
+.credential-verify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+  color: var(--accent);
+  font-size: 16px;
+  font-weight: 600;
+}
 @media (max-width: 760px) {
-  .credential-grid {grid-template-columns: 1fr}
-  .credential-card {padding: 24px}
-  .credential-badge {height: 140px}
-  .credential-badge img {max-height: 140px}
+  .journey > .resume-section {margin-top: 44px; padding-top: 30px}
+  .resume-nav {display: flex; flex-wrap: wrap}
+  .resume-nav a {padding: 6px 10px; font-size: 14px}
+  .skills-grid, .credential-grid {grid-template-columns: 1fr}
+  .skill-group {padding: 22px; gap: 14px}
+  .credential-badge {height: 184px}
+  .credential-body {padding: 22px}
 }
 @media (prefers-reduced-motion: reduce) {
   .credential-card {transition: none}
-  .credential-card:hover {transform: none}
 }
 
-.skills-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
-.skill-group h3 {font:600 20px/1.4 var(--body);margin-bottom:14px}
-.skill-group .skill-tags {margin:0}
-@media(max-width:760px) {.skills-grid{grid-template-columns:1fr}}
+.stage-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  border-bottom: 1px solid var(--rule);
+}
+.stage-tabs {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #9bb9ad transparent;
+}
+.stage-tabs a {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 20px;
+  white-space: nowrap;
+  border-bottom: 3px solid transparent;
+  font-size: 16px;
+}
+.stage-tabs a small {font-size: 12px; color: var(--muted)}
+.stage-tabs a[aria-current="page"] {color: var(--accent); background: var(--tint); border-bottom-color: var(--accent); font-weight: 600}
+.stage-tabs a:hover {background: var(--tint)}
+.stage-scroll {flex-shrink: 0; width: 40px; height: 44px; border: 1px solid var(--rule); border-radius: 6px; background: var(--paper); color: var(--accent)}
+.stage-scroll:hover {background: var(--tint)}
+.stage .stage-head {border-top: 0; margin-top: 20px}
+.stage-pagination {display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid var(--rule);margin-top:64px;padding-top:24px}
+.stage-pagination a {display:flex;flex-direction:column;gap:8px}
+.stage-pagination div:last-child {text-align:right}
+@media(max-width:760px) {
+  .stage-navigation {gap:6px}
+  .stage-scroll {width:32px}
+  .stage-tabs a {padding:14px}
+  .stage-pagination {gap:20px;font-size:15px}
+}
