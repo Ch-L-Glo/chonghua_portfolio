@@ -1,3 +1,7 @@
-import Portfolio from '../../components/Portfolio';
+import Site from '../../components/Site';
+
 export const metadata = { title: 'About' };
-export default function Page() { return <Portfolio view="about" />; }
+
+export default function Page() {
+  return <Site view="about" />;
+}

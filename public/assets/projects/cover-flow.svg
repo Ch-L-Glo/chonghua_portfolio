@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="1600" height="1000" fill="none">
+<defs><pattern id="d" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="#CBD2DC"></circle></pattern></defs>
+<rect width="800" height="500" fill="#F1F4F8"></rect><rect width="800" height="500" fill="url(#d)"></rect>
+<line x1="60" y1="190" x2="740" y2="190" stroke="#C3CBD6" stroke-width="1.5" stroke-linecap="round"></line>
+<line x1="60" y1="310" x2="740" y2="310" stroke="#C3CBD6" stroke-width="1.5" stroke-linecap="round"></line>
+<line x1="112" y1="70" x2="112" y2="430" stroke="#C3CBD6" stroke-width="1.5" stroke-linecap="round"></line>
+<circle cx="84" cy="130" r="8" stroke="#0B1828" stroke-width="1.5"></circle>
+<rect x="76" y="242" width="16" height="16" stroke="#0B1828" stroke-width="1.5"></rect>
+<polygon points="84,361 93,378 75,378" stroke="#0B1828" stroke-width="1.5"></polygon>
+<path d="M560,250 H690 V130 H288" stroke="#8A96A8" stroke-width="1.5" stroke-dasharray="5 5"></path>
+<polygon points="288,125 280,130 288,135" fill="#8A96A8"></polygon>
+<path d="M215,155 V250 H302" stroke="#0B1828" stroke-width="1.5"></path>
+<polygon points="302,245 310,250 302,255" fill="#0B1828"></polygon>
+<rect x="150" y="105" width="130" height="50" rx="2" fill="#FFFFFF" stroke="#0B1828" stroke-width="1.5"></rect>
+<line x1="166" y1="124" x2="240" y2="124" stroke="#0B1828" stroke-width="3" stroke-linecap="round"></line>
+<line x1="166" y1="137" x2="214" y2="137" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="310" y="225" width="130" height="50" rx="2" fill="#FFFFFF" stroke="#0B1828" stroke-width="1.5"></rect>
+<line x1="326" y1="244" x2="400" y2="244" stroke="#0B1828" stroke-width="3" stroke-linecap="round"></line>
+<line x1="326" y1="257" x2="374" y2="257" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<line x1="440" y1="250" x2="492" y2="250" stroke="#0B1828" stroke-width="1.5" stroke-linecap="round"></line>
+<polygon points="492,245 500,250 492,255" fill="#0B1828"></polygon>
+<polygon points="530,220 560,250 530,280 500,250" fill="#0B1828"></polygon>
+<line x1="530" y1="280" x2="530" y2="337" stroke="#0B1828" stroke-width="1.5" stroke-linecap="round"></line>
+<polygon points="525,337 530,345 535,337" fill="#0B1828"></polygon>
+<rect x="465" y="345" width="130" height="50" rx="2" fill="#2147D4"></rect>
+<line x1="481" y1="364" x2="555" y2="364" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+<line x1="481" y1="377" x2="529" y2="377" stroke="#B9C8F5" stroke-width="3" stroke-linecap="round"></line>
+<line x1="595" y1="370" x2="664" y2="370" stroke="#0B1828" stroke-width="1.5" stroke-linecap="round"></line>
+<polygon points="664,365 672,370 664,375" fill="#0B1828"></polygon>
+<circle cx="690" cy="370" r="18" fill="#FFFFFF" stroke="#0B1828" stroke-width="1.5"></circle>
+<path d="M681,370 l6,6 l11,-12" stroke="#2147D4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

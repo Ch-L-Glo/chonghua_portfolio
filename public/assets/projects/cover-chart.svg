@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="1600" height="1000" fill="none">
+<defs><pattern id="d" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="#CBD2DC"></circle></pattern></defs>
+<rect width="800" height="500" fill="#F1F4F8"></rect><rect width="800" height="500" fill="url(#d)"></rect>
+<rect x="70" y="110" width="170" height="280" rx="2" fill="#FFFFFF" stroke="#C3CBD6" stroke-width="1.5"></rect>
+<rect x="70.75" y="110.75" width="168.5" height="23" rx="1.5" fill="#E4E9F0"></rect>
+<line x1="86" y1="150" x2="144" y2="150" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="146" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="71" y1="166" x2="239" y2="166" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="182" x2="158" y2="182" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="178" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="71" y1="198" x2="239" y2="198" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="214" x2="132" y2="214" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="210" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="71" y1="230" x2="239" y2="230" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="246" x2="150" y2="246" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="183" y="235" width="48" height="22" rx="2" fill="#E6ECFB" stroke="#2147D4" stroke-width="1.5"></rect>
+<rect x="190" y="242" width="34" height="8" rx="1" fill="#2147D4"></rect>
+<line x1="71" y1="262" x2="239" y2="262" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="278" x2="138" y2="278" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="274" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="71" y1="294" x2="239" y2="294" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="310" x2="156" y2="310" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="306" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="71" y1="326" x2="239" y2="326" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="342" x2="130" y2="342" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="338" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="71" y1="358" x2="239" y2="358" stroke="#E4E9F0" stroke-width="1" stroke-linecap="round"></line>
+<line x1="86" y1="374" x2="146" y2="374" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<rect x="190" y="370" width="34" height="8" rx="1" fill="#C9D1DC"></rect>
+<line x1="231" y1="246" x2="288" y2="246" stroke="#2147D4" stroke-width="1.5" stroke-linecap="round"></line>
+<polygon points="310,224 332,246 310,268 288,246" fill="#0B1828"></polygon>
+<line x1="302" y1="242" x2="318" y2="242" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></line>
+<line x1="302" y1="250" x2="318" y2="250" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></line>
+<line x1="332" y1="246" x2="372" y2="246" stroke="#2147D4" stroke-width="1.5" stroke-linecap="round"></line>
+<polygon points="372,241 380,246 372,251" fill="#2147D4"></polygon>
+<rect x="380" y="80" width="350" height="340" rx="2" fill="#FFFFFF" stroke="#0B1828" stroke-width="1.5"></rect>
+<line x1="402" y1="108" x2="500" y2="108" stroke="#0B1828" stroke-width="4" stroke-linecap="round"></line>
+<line x1="402" y1="124" x2="462" y2="124" stroke="#8A96A8" stroke-width="3" stroke-linecap="round"></line>
+<line x1="400" y1="205" x2="710" y2="205" stroke="#8A96A8" stroke-width="1.5" stroke-dasharray="4 5"></line>
+<rect x="404" y="260" width="24" height="120" rx="1" fill="#C9D1DC"></rect>
+<rect x="442" y="230" width="24" height="150" rx="1" fill="#C9D1DC"></rect>
+<rect x="480" y="245" width="24" height="135" rx="1" fill="#C9D1DC"></rect>
+<rect x="518" y="210" width="24" height="170" rx="1" fill="#C9D1DC"></rect>
+<rect x="556" y="220" width="24" height="160" rx="1" fill="#C9D1DC"></rect>
+<rect x="594" y="165" width="24" height="215" rx="1" fill="#2147D4"></rect>
+<rect x="632" y="200" width="24" height="180" rx="1" fill="#C9D1DC"></rect>
+<rect x="670" y="180" width="24" height="200" rx="1" fill="#C9D1DC"></rect>
+<line x1="400" y1="380" x2="710" y2="380" stroke="#0B1828" stroke-width="1.5" stroke-linecap="round"></line>
+<line x1="606" y1="165" x2="640" y2="132" stroke="#2147D4" stroke-width="1.5" stroke-linecap="round"></line>
+<rect x="640" y="112" width="62" height="22" rx="2" fill="#E6ECFB" stroke="#2147D4" stroke-width="1.5"></rect>
+<line x1="650" y1="123" x2="692" y2="123" stroke="#2147D4" stroke-width="3" stroke-linecap="round"></line>
+<circle cx="606" cy="165" r="5" fill="#FFFFFF" stroke="#2147D4" stroke-width="2"></circle>
+</svg>

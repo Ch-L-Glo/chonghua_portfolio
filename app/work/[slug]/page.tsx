@@ -1,5 +1,20 @@
-import Portfolio from '../../../components/Portfolio';
-import content from '../../../data/content.json';
-export function generateStaticParams() { return content.projects.map(p => ({ slug: p.id })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; return { title: content.projects.find(p => p.id === slug)?.en.subtitle }; }
-export default async function Page({ params }: { params: Promise<{ slug: string }> }) { const { slug } = await params; return <Portfolio view="project" slug={slug} />; }
+import Site from '../../../components/Site';
+import { detailWorks, findWork } from '../../../data/works';
+
+type Props = { params: Promise<{ slug: string }> };
+
+// Only entries with a written case get a page; placeholders and link-only builds do not.
+export function generateStaticParams() {
+  return detailWorks.map((work) => ({ slug: work.id }));
+}
+
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+  const work = findWork(slug);
+  return { title: work?.title.en, description: work?.summary.en };
+}
+
+export default async function Page({ params }: Props) {
+  const { slug } = await params;
+  return <Site view="project" slug={slug} />;
+}
